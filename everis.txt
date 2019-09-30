@@ -123,3 +123,184 @@ To https://github.com/Victor1s2s/PruebaEveris.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 C:\Dev\PruebaEveris>git push C:\Dev\PruebaEveris\everis.txt
+
+
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   everis.txt
+
+no changes added to commit
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git add everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+[master 565ba51] Comandos git
+ 1 file changed, 125 insertions(+)
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.39 KiB | 473.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Victor1s2s/PruebaEveris.git
+   f6dd8af..565ba51  master -> master
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ ^C
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git branch unaRama
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$
+
+
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   everis.txt
+
+no changes added to commit
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git add everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+[master 565ba51] Comandos git
+ 1 file changed, 125 insertions(+)
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.39 KiB | 473.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Victor1s2s/PruebaEveris.git
+   f6dd8af..565ba51  master -> master
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ ^C
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git branch unaRama
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ ^C
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "ramas"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   everis.txt
+
+no changes added to commit
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git add everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "ramas"
+[master 052e88d] ramas
+ 1 file changed, 41 insertions(+), 1 deletion(-)
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 647 bytes | 215.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Victor1s2s/PruebaEveris.git
+   565ba51..052e88d  master -> master
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git push unaRama
+fatal: 'unaRama' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git ??checkout miRama
+git: '??checkout' is not a git command. See 'git --help'.
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git branch unaRama
+fatal: A branch named 'unaRama' already exists.
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git checkout unaRama
+Switched to branch 'unaRama'
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git add everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m
+.git/       everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+$ git commit -m "ramas"
+On branch unaRama
+nothing to commit, working tree clean
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
+
