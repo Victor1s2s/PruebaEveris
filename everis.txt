@@ -123,3 +123,43 @@ To https://github.com/Victor1s2s/PruebaEveris.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 C:\Dev\PruebaEveris>git push C:\Dev\PruebaEveris\everis.txt
+
+
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   everis.txt
+
+no changes added to commit
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git add everis.txt
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git commit -m "Comandos git"
+[master 565ba51] Comandos git
+ 1 file changed, 125 insertions(+)
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.39 KiB | 473.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Victor1s2s/PruebaEveris.git
+   f6dd8af..565ba51  master -> master
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ ^C
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$ git branch unaRama
+
+formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (master)
+$
