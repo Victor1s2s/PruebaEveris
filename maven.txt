@@ -15,3 +15,5 @@ mvn archetype:generate -DgroupId=com.everis.bootcamp -DartifactId=taller-maven
 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 mvn package
+
+mvn clean
