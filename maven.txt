@@ -1,0 +1,17 @@
+git branch 
+			git branch unaRama
+
+volver al master
+ checkout
+fusion de ramas
+ merge
+sincronizar cuando se hace el clone
+fech
+
+
+
+
+mvn archetype:generate -DgroupId=com.everis.bootcamp -DartifactId=taller-maven 
+-DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn package
