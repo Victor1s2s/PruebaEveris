@@ -304,3 +304,15 @@ nothing to commit, working tree clean
 
 formacion@DESKTOP-I3BSGFG MINGW64 /c/Dev/PruebaEveris (unaRama)
 
+git branch segundaRama
+
+git checkout segundaRama
+
+git add everis.txt
+
+git commit -m "seguda ramas"
+
+git push 
+
+
+
