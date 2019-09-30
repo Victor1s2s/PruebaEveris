@@ -1,0 +1,125 @@
+
+C:\Users\formacion>git clone https://github.com/Victor1s2s/PruebaEveris.git
+Cloning into 'PruebaEveris'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\formacion>echo "# PruebaEveris" >> README.md
+
+C:\Users\formacion>git config --global user.name "Victor1s2s"
+
+C:\Users\formacion>git push C:\Dev\PruevaEveris\everis.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\formacion>git push C:\Dev\PruevaEveris\everis.txt master
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\formacion>cd ..
+
+C:\Users>cd ..
+
+C:\>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 365D-195B
+
+ Directory of C:\
+
+09/30/2019  10:56 AM    <DIR>          Dev
+03/18/2017  11:03 PM    <DIR>          PerfLogs
+01/16/2019  08:52 AM    <DIR>          Program Files
+09/30/2019  08:21 AM    <DIR>          Program Files (x86)
+01/16/2019  02:09 AM    <DIR>          scripts
+11/20/2018  12:05 PM    <DIR>          Users
+01/15/2019  09:15 PM    <DIR>          Windows
+               0 File(s)              0 bytes
+               7 Dir(s)  72,146,214,912 bytes free
+
+C:\>cd Dev
+
+C:\Dev>git clone https://github.com/Victor1s2s/PruebaEveris.git
+Cloning into 'PruebaEveris'...
+warning: You appear to have cloned an empty repository.
+
+C:\Dev>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 365D-195B
+
+ Directory of C:\Dev
+
+09/30/2019  11:03 AM    <DIR>          .
+09/30/2019  11:03 AM    <DIR>          ..
+01/17/2019  06:06 PM    <DIR>          bootcamp-angular
+01/10/2019  12:54 PM    <DIR>          bootcamp-java
+01/17/2019  06:05 PM    <DIR>          bootcamp-net
+09/30/2019  11:03 AM    <DIR>          PruebaEveris
+09/30/2019  10:57 AM    <DIR>          PruevaEveris
+               0 File(s)              0 bytes
+               7 Dir(s)  72,146,173,952 bytes free
+
+C:\Dev>git push C:\Dev\PruevaEveris\everis.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Dev>git config --global user.name "Victor1s2s"
+
+C:\Dev>echo "# PruebaEveris" >> README.md
+
+C:\Dev>git push C:\Dev\PruebaEveris\everis.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Dev>cd PruebaEveris
+
+C:\Dev\PruebaEveris>git add everis.txt
+
+C:\Dev\PruebaEveris>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   everis.txt
+
+
+C:\Dev\PruebaEveris>git commit -m "Pruebe commit"
+[master (root-commit) f6dd8af] Pruebe commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 everis.txt
+
+C:\Dev\PruebaEveris>git push C:\Dev\PruebaEveris\everis.txt
+fatal: invalid gitfile format: C:\Dev\PruebaEveris\everis.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Dev\PruebaEveris>git push everis.txt
+fatal: invalid gitfile format: everis.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Dev\PruebaEveris>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': Victor1s2s
+Password for 'https://Victor1s2s@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Victor1s2s/PruebaEveris.git/'
+
+C:\Dev\PruebaEveris>git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': Victor1s2s
+Password for 'https://Victor1s2s@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 198 bytes | 49.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Victor1s2s/PruebaEveris.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Dev\PruebaEveris>git push C:\Dev\PruebaEveris\everis.txt
