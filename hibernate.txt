@@ -1,0 +1,63 @@
+@Entity
+@Table(name="CART")
+public class Cart{
+
+@OneToMany(mappedBy="shoppingCart")
+	private Set<item> items;
+}
+
+@Entity
+@Table(name="ITEMS")
+public class Item{
+
+@ManyToOne(mappedBy="items")
+JoinColumn(name="id_cart") //clave ajena que enlaza con la tabla CART
+ 	private Cart cart;
+}
+
+
+
+
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.samples.petclinic.model.BaseEntity;
+import org.springframework.samples.petclinic.visit.Visit;
+
+/**
+ * Crear una entidad Bill que se mapeará a la tabla facturas. Cada owner puede tener 0..n facturas,
+ *  y cada visita estara relacionada con 0..1 facturas. Los campos de factura seran un numero de
+ *   identificacion(preparado como un long de 10 digitos), una fecha de pago y una cuantia. 
+ * @author formacion
+ *
+ */
+
+@Entity
+@Table(name = "FACTURAS")
+public class Bill  {
+	
+
+	@Digits(integer=10, fraction=0)
+	private long idFactura;
+	
+	@Temporal(TemporalType.DATE)
+	@DateTimeFormat(pattern="dd/mm/yyyy")
+	private Date fechaPago;
+	
+	@Digits(integer=10, fraction=0)
+	@DecimalMin("0.0")
+	private float cuantia;
+	
+	 @OneToMany(fetch=FetchType.LAZY , cascade = CascadeType.ALL, mappedBy = "bill")
+	 private Set <Owner> owners ;
+	 
+	 @ManyToOne
+	 @JoinColumn(name="owner") //clave ajena que enlaza con la tabla owner
+	  	private Visit  visit;
+	 
+	 Bill(){
+		 
+	 }
+	
+
+}
+
