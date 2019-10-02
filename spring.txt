@@ -1,0 +1,31 @@
+framework es una libreria que ademas hace cosas por si mismo sin que se lo pidamos
+
+spring busca las anotacionas en nuestro proyecto
+
+la alternativa abitual suele ser JSF
+
+spring boot configura los proyectos le dices el tipo de proyecto web, etc y te configura todos los modulos necesarios.
+
+el core define estos 3 mecanismos 
+	Inversion del control (IoC): El control no lo tiene el programador lo tiene spring.
+	Inyeccion de dependencias: Tecnica que se aplica para que un objeto no tenga que obtener sus dependencias es el contenedor de spring el que las inyecta.
+	Spring Container (IoC Container): Crea los objetos, los inyecta, los configura y maneja su ciclo de vida.
+
+
+@Controler,@Service y @Repository son especificaciones de @Component(este es generico es como una clase padre)
+@Repository es lo mismo que DAO.
+
+Ciclo de vida de un componente: inicializacion,uso(Singleton una unica instancia, es el comportamiento por defecto),destruccion.
+
+spring lo instancia todo al arancar la aplicacion.
+
+Inyeccion de dependencias ventajas
+	Codigo mas sencillo
+	Facilidad para probar
+	Facilidad para reutilizar
+	El codigo no queda acoplado.
+Se usa la anotacion @Autowired 
+	private UserService service;  lo que hace es buscar la clase UserService en el proyecto e instancia la clase, 
+y con esa instancia inicializa la variable servise.
+
+Los elementos marcados con @Autowired no tiene por qué ser publicos
