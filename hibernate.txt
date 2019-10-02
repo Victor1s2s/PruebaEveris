@@ -33,7 +33,7 @@ import org.springframework.samples.petclinic.visit.Visit;
 
 @Entity
 @Table(name = "FACTURAS")
-public class Bill  {
+public class Bill  extends BaseEntity{
 	
 
 	@Digits(integer=10, fraction=0)
