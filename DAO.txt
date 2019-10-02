@@ -1,0 +1,42 @@
+@PersistenceContext 
+private EntityManager manager;
+ 
+
+//Se consulta el empleado mediante el ID 
+return manager.find(Employee.class, empId); 
+
+ 
+//El empleado es nuevamente consultado de la base de datos 
+//debido a que cada invocacion es un nuevo contexto de persistencia 
+
+Employee emp = manager.find(Employee.class, empId); 
+emp.setName(newName); 
+
+//Al termina el método, el contenedor realiza un Commit automatico. 
+
+Otra forma de hacerlo
+
+Application-Managed Entity Manager 
+La segunda forma de trabajar con JPA es delegar al programador la responsabilidad de administrar las transacciones, este escenario se da con mucha mÃ¡s frecuencia en aplicaciones de escritorio, aunque existen escenarios donde es utilizado en entornos de Java EE.
+Basicamente el programador tiene que crear el EntityManager a travÃ©s del EntityManagerFactory y tiene que abrir y cerrar las transacciones cada vez que requiera.
+Veamos como quedarí­a el escenario anteriormente planteado utilizando application-managed:
+
+public class EmployeeApplicationDAO {
+	private EntityManager manager;
+	public EmployeeApplicationDAO() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA_PU");
+		manager = emf.createEntityManager();
+	}
+	public Employee getEmployeeById(Long empId) {
+		return manager.find(Employee.class, empId);
+	}
+	public void updateEmployeeName(Long empId, String newName) {
+		//Se abre la transacciÃ³n manualmente
+		manager.getTransaction().begin();
+		Employee emp = manager.find(Employee.class, empId);
+		emp.setName(newName);
+		//Se cierra la transacciÃ³n manulamente
+		manager.getTransaction().commit();
+	}
+}
+Podemos apreciar que el constructor de la clase estamos creando manualmente el EntityManager en lugar de simplemente inyectarlo como el Container-Managed, la otra diferencia es en el método updateEmployeeName, ya que para poder persistir los cambios tenemos que abrir y cerrar la transaccion con los metodos beign y commit. 
