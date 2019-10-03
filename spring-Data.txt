@@ -1,0 +1,23 @@
+Java Persistent API(JPA): es un estandar del lenguaje de programacion de java para manejar datos de un modelo de bases de datos relacional.
+se sigue un enfoque orientado a objetos.
+- se utiliza un modelo de mapeo de objeto-relacional(ORM) 
+
+- Java Persistent Query Language(JPQL): es un lenguaje de consultas orientadas a objetos.
+	-Es independiente de la plataforma.
+
+JPA Repository:
+	- Permite la definicion de objetos de acceso a datos
+	- Metodos CRUD (Create-Read-Update_Delete)
+	- Metodos de cosulta a partir de su nomenclatura ejemplo findById(Long id) find...By, read...By, query..By
+		findFirstBy -> el primero
+		findTop3By -> los tres primeros.
+		findDitictBy -> 
+	- Metodos de consulta a partir de JPQL o mediante queries con nombre.
+		@Query("select u from User u where u.emailAddress = ?1")
+		User findByEmailAddress(String emailAddress);
+		
+		- :alias es quevalente a %
+
+
+
+
