@@ -29,3 +29,7 @@ Se usa la anotacion @Autowired
 y con esa instancia inicializa la variable servise.
 
 Los elementos marcados con @Autowired no tiene por qué ser publicos
+
+public interface UserDAO
+etends JpaRepository<User,Long>{
+}                                 User es la entidad,el Long es el identificador unico de laentidad.
